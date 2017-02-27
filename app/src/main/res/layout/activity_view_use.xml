@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_view_use"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:statusBarBackground="@android:color/holo_purple"
+    tools:context="com.cwl.nestedscrolling.ViewUseActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:expanded="true">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:minHeight="?attr/actionBarSize"
+            app:title="ssss"
+            app:layout_scrollFlags="scroll">
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@android:color/holo_orange_light"
+            android:minHeight="50dp"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"/>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/holo_purple"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="kkkkk"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/holo_purple"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="kkkkk"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/holo_purple"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="kkkkk"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_anchor="@id/ns"
+        app:layout_anchorGravity="center"
+        android:text="aaaa"/>
+</android.support.design.widget.CoordinatorLayout>
