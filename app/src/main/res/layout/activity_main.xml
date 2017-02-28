@@ -21,6 +21,12 @@
         android:layout_height="wrap_content"
         android:text="nested"
         android:onClick="nestedAction"/>
+    <Button
+        android:id="@+id/behavior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="behavior"
+        android:onClick="behaviorAction"/>
 
     <Button
         android:id="@+id/use"

@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.squareup.leakcanary.LeakCanary;
 
 public class ViewUseActivity extends AppCompatActivity {
     AppBarLayout appBarLayout;

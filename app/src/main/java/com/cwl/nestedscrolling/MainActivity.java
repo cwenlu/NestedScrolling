@@ -26,4 +26,8 @@ public class MainActivity extends AppCompatActivity {
     public void viewUseAction(View v){
         startActivity(new Intent(this,ViewUseActivity.class));
     }
+
+    public void behaviorAction(View v){
+        startActivity(new Intent(this,BehaviorActivity.class));
+    }
 }
