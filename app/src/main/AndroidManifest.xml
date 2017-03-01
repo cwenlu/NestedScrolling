@@ -18,7 +18,15 @@
         <activity android:name=".SimpleActivity" />
         <activity android:name=".NestedActivity" />
         <activity android:name=".ViewUseActivity" />
-        <activity android:name=".BehaviorActivity"></activity>
+        <activity android:name=".BehaviorActivity" />
+        <activity android:name=".BehaviorActivity2" />
+        <activity android:name=".TestViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

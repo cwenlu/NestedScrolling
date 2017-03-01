@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_behavior2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cwl.nestedscrolling.BehaviorActivity2">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_purple"
+        app:layout_behavior=".ViewOffsetBehavior"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_gravity="bottom"
+        app:layout_behavior=".HeaderBehavior"/>
+</android.support.design.widget.CoordinatorLayout>
