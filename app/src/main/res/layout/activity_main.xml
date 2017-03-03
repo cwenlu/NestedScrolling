@@ -9,37 +9,39 @@
 
 
     <Button
-        android:id="@+id/simple"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="nestedscrolling基础原理示例"
         android:onClick="simpleAction"/>
 
     <Button
-        android:id="@+id/nested"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="nested"
         android:onClick="nestedAction"/>
     <Button
-        android:id="@+id/behavior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="behavior"
         android:onClick="behaviorAction"/>
 
     <Button
-        android:id="@+id/behavior2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="系统behavior测试"
         android:onClick="behaviorAction2"/>
 
     <Button
-        android:id="@+id/use"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="折叠相关控件运用"
         android:onClick="viewUseAction"/>
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bottom_sheet_behavior"
+        android:onClick="sheetAction"/>
 
 </LinearLayout>

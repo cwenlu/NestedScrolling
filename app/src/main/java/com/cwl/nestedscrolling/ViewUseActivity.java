@@ -1,5 +1,6 @@
 package com.cwl.nestedscrolling;
 
+import android.os.Handler;
 import android.support.design.widget.AppBarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,6 +25,8 @@ public class ViewUseActivity extends AppCompatActivity {
         appBarLayout.addOnOffsetChangedListener(listener);
 
     }
+
+
 
     @Override
     protected void onDestroy() {

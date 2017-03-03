@@ -34,4 +34,8 @@ public class MainActivity extends AppCompatActivity {
     public void behaviorAction2(View v){
         startActivity(new Intent(this,BehaviorActivity2.class));
     }
+
+    public void sheetAction(View v){
+        startActivity(new Intent(this,BottomSheetActivity.class));
+    }
 }
